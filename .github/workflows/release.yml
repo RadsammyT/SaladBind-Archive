@@ -1,0 +1,46 @@
+name: Compile Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Generate changelog
+        run: |
+          echo $'![SaladBind logo](https://raw.githubusercontent.com/Vukkyy/vukmoji/master/emojis/static/vukkyminer.png)\n' >> CHANGELOG.md
+          gh api repos/LITdevs/SaladBind/releases/generate-notes -f tag_name="${GITHUB_REF#refs/tags/}" -f target_commitish=main -q .body >> CHANGELOG.md
+          echo $'\n\n![SaladBind logo](https://raw.githubusercontent.com/Vukkyy/vukmoji/master/emojis/static/vukkyminer.png)' >> CHANGELOG.md
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: Read changelog
+        id: changelog
+        uses: juliangruber/read-file-action@v1
+        with:
+          path: ./CHANGELOG.md
+      - name: Install node
+        uses: actions/setup-node@v2.5.1
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - name: Compile
+        run: |
+            npm install
+            npm run compile
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          body: ${{ steps.changelog.outputs.content }}
+          token: ${{ secrets.BEEPBOOP_TOKEN }}
+          files: |
+            bin/saladbind-win.exe
+            bin/saladbind-macos
+            bin/saladbind-linux
