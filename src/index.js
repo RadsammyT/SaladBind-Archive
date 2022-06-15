@@ -2,7 +2,8 @@ process.on("uncaughtException", err => {
 	try {
 		if(err.stack.includes("Could not connect") || err.stack.includes("RPC_") || err.stack.includes("discord-rpc")) {
 			console.log("There was an error with the Discord RPC but it has been ignored. If you see this message and SaladBind is unusable, please contact us on Discord.");
-			return "Discord RPC Broken I guess, as always"; // no one will see this message :)
+			return "Discord RPC Broken I guess, as always"; // no one will see this message :) -Vukky
+			// except for me. -RadsammyT
 		}
 		console.clear();
 		console.log(`${chalk.bold.red("Oh noes! A scary error!")}\nTechnical details: ${err.message}`);
@@ -57,7 +58,8 @@ process.on("uncaughtException", err => {
 	}
 });
 
-const ora = require('ora'); // ara ara
+const ora = require('ora'); // ara ara 
+							// yare yare dawa
 const chalk = require('chalk');
 const packageJson = require('../package.json');
 const fs = require('fs');
@@ -208,7 +210,7 @@ if (fs.existsSync(`${dataDirectory}/last.json`)){
 		case 'changes':
 			presence.configuring("Reading the changelog")
 			const spinner = ora('Fetching the Changelogs').start();
-			fetch('https://raw.githubusercontent.com/LITdevs/SaladBind/main/internal/changelog.json')
+			fetch('https://raw.githubusercontent.com/RadsammyT/SaladBind-Archive/main/internal/changelog.json')
 				.then(res => res.json())
 				.then(data => {
 					console.clear();
