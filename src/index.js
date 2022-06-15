@@ -162,6 +162,11 @@ async function menu(clear) {
 	}
 	presence.mainmenu();
 	console.log(chalk.bold.green(`${aprilfools ? "VegetableJoiner" : "SaladBind"} v${packageJson.version}`));
+	fetch('https://raw.githubusercontent.com/RadsammyT/SaladBind-Archive/main/internal/notes.json')
+		.then(res => res.json())
+		.then(data => {
+			console.log(data.note);
+		})
 	let choices = [{
 		name: 'Start mining',
 		value: 'mining'
