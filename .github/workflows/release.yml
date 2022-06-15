@@ -13,7 +13,7 @@ jobs:
         node-version: [16.x]
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Generate changelog
         run: |
           echo $'![SaladBind logo](https://raw.githubusercontent.com/Vukkyy/vukmoji/master/emojis/static/vukkyminer.png)\n' >> CHANGELOG.md
