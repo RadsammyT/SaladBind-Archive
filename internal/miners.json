@@ -41,8 +41,8 @@
         "trex": {
             "miner": "T-Rex",
             "download": {
-                "win32": "https://github.com/trexminer/T-Rex/releases/download/0.26.1/t-rex-0.26.1-win.zip",
-                "linux": "https://github.com/trexminer/T-Rex/releases/download/0.26.1/t-rex-0.26.1-linux.tar.gz"
+                "win32": "https://github.com/trexminer/T-Rex/releases/download/0.26.4/t-rex-0.26.4-win.zip",
+                "linux": "https://github.com/trexminer/T-Rex/releases/download/0.26.4/t-rex-0.26.4-linux.tar.gz"
             },
             "algos": [
                 "ethash",
@@ -59,7 +59,7 @@
                 "linux"
             ],
             "fee": 1,
-            "version": "0.26.1",
+            "version": "0.26.4",
             "parameters": {
                 "fileName": "t-rex",
                 "algo": "-a",
