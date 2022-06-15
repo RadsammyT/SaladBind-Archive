@@ -461,6 +461,7 @@ async function prepStart(minerData, algo, pool, region, advancedCommands, quick=
 		console.log("Current Advanced Commands:")
 		console.log(advancedCommands)
 	}
+	
 	const startNow = await inquirer.prompt({
 		type: "list",
 		name: "startNow",
