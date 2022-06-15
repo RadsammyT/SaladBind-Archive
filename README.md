@@ -3,6 +3,7 @@ THIS REPO IS FOR ARCHIVE PURPOSES ONLY. SKELLY SET HIS REPO TO PRIVATE/READ-ONLY
 
 **NO CHANGES TO THE STANDARD README BELOW ARE MADE**
 
+[my discord server](https://discord.gg/d4qQQr9Grx)
 
 # SaladBind [![Discord](https://img.shields.io/discord/868937321402204220?color=5865f2&label=chat&logo=discord&logoColor=7289da)](https://discord.gg/litdevs)
 
