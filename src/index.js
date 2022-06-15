@@ -2,7 +2,7 @@ process.on("uncaughtException", err => {
 	try {
 		if(err.stack.includes("Could not connect") || err.stack.includes("RPC_") || err.stack.includes("discord-rpc")) {
 			console.log("There was an error with the Discord RPC but it has been ignored. If you see this message and SaladBind is unusable, please contact us on Discord.");
-			return "Discord RPC Broken I guess, as always"; // no one will see this message :) -Vukky
+			return "Discord RPC Broken I guess, as always"; // no one will see this message :) -Vukky/whoever wrote this
 			// except for me. -RadsammyT
 		}
 		console.clear();

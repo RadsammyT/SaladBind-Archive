@@ -1,3 +1,8 @@
+# ARCHIVE NOTES
+THIS REPO IS FOR ARCHIVE PURPOSES ONLY. SKELLY SET HIS REPO TO PRIVATE/READ-ONLY/WHATEVER AND THIS BROKE ALL EXISTING COPYS OF SKELLYS SALADBIND DISTRO BECAUSE OF IT (For specifics, the lack of changelog was the primary cause )
+
+
+
 # SaladBind [![Discord](https://img.shields.io/discord/868937321402204220?color=5865f2&label=chat&logo=discord&logoColor=7289da)](https://discord.gg/litdevs)
 
 <img align="right" width="100" height="100" src="https://raw.githubusercontent.com/Vukkyy/vukmoji/master/emojis/static/vukkyminer.png">
