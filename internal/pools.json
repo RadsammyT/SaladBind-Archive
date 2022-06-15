@@ -1,0 +1,63 @@
+{
+    "nicehash": {
+        "name": "NiceHash",
+        "regions": ["eu-west", "eu-north", "usa-west", "usa-east"],
+        "algos": {
+            "beamv3": {
+                "host": "stratum+tcp://beamv3.REGION.nicehash.com:3387"
+            },
+            "kawpow": {
+                "host": "stratum+tcp://kawpow.REGION.nicehash.com:3385"
+            },
+            "ethash": {
+                "host": "stratum+tcp://daggerhashimoto.REGION.nicehash.com:3353"
+            },
+            "EQUI144_5": {
+                "host": "stratum+tcp://zhash.REGION.nicehash.com:3369"
+            },
+            "randomx": {
+                "host": "stratum+tcp://randomxmonero.REGION.nicehash.com:3380"
+            },
+            "autolykos2": {
+                "host": "stratum+tcp://autolykos.REGION.nicehash.com:3390"
+            },
+            "octopus": {
+                "host": "stratum+tcp://octopus.REGION.nicehash.com:3389"
+            }
+
+        }
+    },
+    "ethermine": {
+        "name": "Ethermine",
+        "regions": ["asia1", "eu1", "us1"],
+        "algos": {
+            "etchash": {
+                "host": "ethproxy+ssl://REGION-etc.ethermine.org:5555"
+            },
+            "ethash": {
+                "host": "ethproxy+ssl://REGION.ethermine.org:5555"
+            }
+        }
+    },
+    "prohashing": {
+        "name": "Prohashing",
+        "regions": ["europe", "us"],
+        "algos": {
+            "ethash": {
+                "host": "stratum+tcp://REGIONprohashing.com:3339"
+            },
+            "etchash": {
+                "host": "stratum+tcp://REGIONprohashing.com:3357"
+            },
+            "EQUI144_5": {
+                "host": "stratum+tcp://REGIONprohashing.com:3345"
+            },
+            "randomx": {
+                "host": "stratum+tcp://REGIONprohashing.com:3359"
+            },
+            "kawpow": {
+                "host": "stratum+tcp://REGIONprohashing.com:3361"
+            }
+        }
+    }
+}

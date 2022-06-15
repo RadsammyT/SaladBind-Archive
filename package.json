@@ -1,0 +1,40 @@
+{
+  "name": "saladbind",
+  "version": "1.7.4",
+  "description": "BIND-ing the good features from other projects together (and fucking nuking the bad ones)",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index",
+    "compile": "pkg src/index.js --targets node16-linux-x64,node16-macos-x64,node16-win-x64 --output bin/saladbind",
+    "preversion": "node internal/alfurVersionValidator.js",
+    "postversion": "git push && git push --tags && node internal/alfurAUR.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LITdevs/SaladBind.git"
+  },
+  "author": "LIT Devs",
+  "license": "GNUv3",
+  "bugs": {
+    "url": "https://github.com/LITdevs/SaladBind/issues"
+  },
+  "homepage": "https://github.com/LITdevs/SaladBind#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "decompress": "^4.2.1",
+    "decompress-targz": "^4.1.1",
+    "decompress-unzip": "^4.0.1",
+    "discord-rpc": "^4.0.1",
+    "env-paths": "^2.2.1",
+    "https": "^1.0.0",
+    "inquirer": "^8.2.0",
+    "mv": "^2.1.1",
+    "node-fetch": "^2.6.7",
+    "open": "^8.4.0",
+    "ora": "^5.4.1",
+    "systeminformation": "^5.11.2"
+  },
+  "devDependencies": {
+    "pkg": "^5.5.2"
+  }
+}
