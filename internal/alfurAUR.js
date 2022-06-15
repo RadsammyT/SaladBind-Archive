@@ -1,3 +1,10 @@
+/**
+ * archive notes:
+ * below seems to be an update script for saladbinds AUR package
+ * even though it seems to be used for vukky's computer only
+ * I'm leaving it here since THIS IS an archive afterall
+ */
+
 const os = require("os");
 const { execSync } = require("child_process");
 const pjson = require("../package.json");

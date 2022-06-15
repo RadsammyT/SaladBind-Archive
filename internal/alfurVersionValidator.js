@@ -1,3 +1,8 @@
+/**
+ * archive notes:
+ * yeah I can totally see myself doing this
+ */
+
 const changelog = require("./changelog.json");
 const pjson = require("../package.json");
 
