@@ -1,6 +1,7 @@
 # ARCHIVE NOTES
-THIS REPO IS FOR ARCHIVE PURPOSES ONLY. SKELLY SET HIS REPO TO PRIVATE/READ-ONLY/WHATEVER AND THIS BROKE ALL EXISTING COPYS OF SKELLYS SALADBIND DISTRO BECAUSE OF IT (For specifics, the lack of changelog was the primary cause )
+THIS REPO IS FOR ARCHIVE PURPOSES ONLY. SKELLY SET HIS REPO TO PRIVATE/READ-ONLY/WHATEVER AND THIS BROKE ALL EXISTING COPYS OF SKELLYS SALADBIND DISTRO BECAUSE OF IT (For specifics, the lack of changelog was the primary cause along with releases)
 
+**NO CHANGES TO THE STANDARD README BELOW ARE MADE**
 
 
 # SaladBind [![Discord](https://img.shields.io/discord/868937321402204220?color=5865f2&label=chat&logo=discord&logoColor=7289da)](https://discord.gg/litdevs)
