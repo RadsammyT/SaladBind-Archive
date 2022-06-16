@@ -3,7 +3,7 @@ THIS REPO IS FOR PEOPLE WHO WANT TO CONTINUE USING SALADBIND. IT WILL BE SOMEWHA
 IN THE FUTURE, THIS REPO MAY MEET THE SAME FATE AS THE ORIGINAL. ALTERNATIVES FOR SALADBIND MAY COME UP IN THE MEANWHILE.
 
 [Try Salad in CLI](https://angaros.vercel.app/cli.html)
-
+[Wayback Machine of the LITdevs repo](https://web.archive.org/web/20220504055329/https://github.com/LITdevs/SaladBind)
 **NO CHANGES TO THE STANDARD README BELOW ARE MADE**
 
 [my discord server](https://discord.gg/d4qQQr9Grx)
