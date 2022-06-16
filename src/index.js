@@ -150,23 +150,32 @@ process.title = `${aprilfools ? "VegetableJoiner" : "SaladBind"} v${packageJson.
 			if (!fs.existsSync(configFile)) {
 				if(!dontStart) run(false);
 			} else {
+				
 				console.log(chalk.bold.green(`SaladBind v${packageJson.version}`));
 				console.clear();
+				
 				if(!dontStart) menu(false);
 			}
 	})
 })();
+
+
+function getNotes() {
+	fetch('https://raw.githubusercontent.com/RadsammyT/SaladBind-Archive/main/internal/notes.json').
+		then(res => res.json())
+		.then(data => {
+			return data.note;
+		});
+}
+
+
 async function menu(clear) {
 	if (clear == undefined || clear == true) {
 		console.clear();
 	}
+	
 	presence.mainmenu();
-	console.log(chalk.bold.green(`${aprilfools ? "VegetableJoiner" : "SaladBind"} v${packageJson.version}`));
-	fetch('https://raw.githubusercontent.com/RadsammyT/SaladBind-Archive/main/internal/notes.json')
-		.then(res => res.json())
-		.then(data => {
-			console.log(data.note);
-		})
+	console.log(chalk.bold.green(`${getNotes()} \n ${aprilfools ? "VegetableJoiner" : "SaladBind"} v${packageJson.version}`));
 	let choices = [{
 		name: 'Start mining',
 		value: 'mining'
@@ -176,7 +185,7 @@ async function menu(clear) {
 		value: 'config'
 	},
 	{
-		name: 'Join the SaladBind Discord',
+		name: 'Join the SaladBind Archive Discord',
 		value: 'discord'
 	},
 	{
@@ -236,9 +245,9 @@ if (fs.existsSync(`${dataDirectory}/last.json`)){
 		case 'discord':
 			let temp = await si.osInfo()
 			if (temp.platform == "linux") {
-				console.log("\nhttps://discord.gg/HfBAtQ2afz");
+				console.log("\nhttps://discord.gg/d4qQQr9Grx");
 			} else {
-				open("https://discord.gg/HfBAtQ2afz");
+				open("https://discord.gg/d4qQQr9Grx");
 				console.log("\nOpened the invite in your browser!");
 			}
 			setTimeout(() => {
