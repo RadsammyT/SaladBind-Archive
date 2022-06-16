@@ -1,12 +1,12 @@
 {
     "version": "1.7.4",
     "changelog": [
-        "1.7.0: SaladBind now uses proper system folders",
-        "RECONFIGURING IS REQUIRED!",
-        "1.7.1: Fixed nothing LOL... :(",
-        "1.7.2: Fixed the patch of 1.7.1 :), Windows machines can now find the miner again.",
-        "1.7.3: Fixed a bug caused by 1.7.2 making it work ONLY on Windows machines.",
-	"1.7.4: Updated messages to reflect file locations being changed"
+        "heya so I thought I'd hijack your changelog \n in the form of notes on how I've changed things comparing to the original.",
+        "The following changes were made:",
+        "added a yellow label on the top of main menu to indicate archive version",
+        "Changed 'what's new' to 'note' (the very thing you're reading now)",
+        "hijacked the discord link to ours since the devs don't work on saladbind anymore (join if you want to be notified of updates)"
+
     ],
     "next_version": "1.6.0",
     "next_changelog": [

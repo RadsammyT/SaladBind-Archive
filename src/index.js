@@ -159,23 +159,14 @@ process.title = `${aprilfools ? "VegetableJoiner" : "SaladBind"} v${packageJson.
 	})
 })();
 
-
-function getNotes() {
-	fetch('https://raw.githubusercontent.com/RadsammyT/SaladBind-Archive/main/internal/notes.json').
-		then(res => res.json())
-		.then(data => {
-			return data.note;
-		});
-}
-
-
 async function menu(clear) {
 	if (clear == undefined || clear == true) {
 		console.clear();
 	}
 	
 	presence.mainmenu();
-	console.log(chalk.bold.green(`${getNotes()} \n ${aprilfools ? "VegetableJoiner" : "SaladBind"} v${packageJson.version}`));
+	console.log(' ' + chalk.bold.bgYellow.black(`ARCHIVE VERSION 4`));
+	console.log(' ' + chalk.bold.green(`${aprilfools ? "VegetableJoiner" : "SaladBind"} v${packageJson.version}`));
 	let choices = [{
 		name: 'Start mining',
 		value: 'mining'
@@ -189,7 +180,7 @@ async function menu(clear) {
 		value: 'discord'
 	},
 	{
-		name: 'What\'s new?',
+		name: 'Notes',
 		value: 'changes'
 	},
 	{
