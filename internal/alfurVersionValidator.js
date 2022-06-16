@@ -1,10 +1,6 @@
 /**
  * archive notes:
  * yeah I can totally see myself doing this
- * 
- * why didn't he do:
- * if(!changelog.version > pjson.version) {...}
- * , instead?
  */
 
 const changelog = require("./changelog.json");
