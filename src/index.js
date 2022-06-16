@@ -165,8 +165,7 @@ async function menu(clear) {
 	}
 	
 	presence.mainmenu();
-	console.log(' ' + chalk.bold.bgYellow.black(`ARCHIVE VERSION 4`));
-	console.log(' ' + chalk.bold.green(`${aprilfools ? "VegetableJoiner" : "SaladBind"} v${packageJson.version}`));
+	console.log(' ' + chalk.bold.green(`${aprilfools ? "VegetableJoiner" : "SaladBind"}`) + ' ' + chalk.bgYellow.blackBright(`v${packageJson.version}`));
 	let choices = [{
 		name: 'Start mining',
 		value: 'mining'
