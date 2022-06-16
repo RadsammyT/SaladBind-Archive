@@ -219,9 +219,9 @@ if (fs.existsSync(`${dataDirectory}/last.json`)){
 				.then(res => res.json())
 				.then(data => {
 					console.clear();
-					spinner.succeed(chalk.bold.green(`What's new in the latest update - ${data.version}`));
+					spinner.succeed(chalk.bold.green(`Notes:`));
 					data.changelog.forEach(item => {
-						console.log(`- ${item}`)
+						console.log(`${item}`)
 					});
 					console.log();
 					inquirer.prompt({
