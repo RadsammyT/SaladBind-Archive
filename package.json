@@ -1,6 +1,6 @@
 {
   "name": "saladbind",
-  "version": "1.7.4",
+  "version": "1.7.4-ARCHIVE.4",
   "description": "BIND-ing the good features from other projects together (and fucking nuking the bad ones)",
   "main": "src/index.js",
   "scripts": {
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LITdevs/SaladBind.git"
+    "url": "git+https://github.com/RadsammyT/SaladBind-Archive.git"
   },
   "author": "LIT Devs",
   "license": "GNUv3",
   "bugs": {
-    "url": "https://github.com/LITdevs/SaladBind/issues"
+    "url": "https://github.com/RadsammyT/SaladBind-Archive/issues"
   },
-  "homepage": "https://github.com/LITdevs/SaladBind#readme",
+  "homepage": "https://github.com/RadsammyT/SaladBind-Archive#readme",
   "dependencies": {
     "chalk": "^4.1.2",
     "decompress": "^4.2.1",

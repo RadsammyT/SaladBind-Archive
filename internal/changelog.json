@@ -1,11 +1,12 @@
 {
-    "version": "1.7.4",
+    "version": "1.7.4-ARCHIVE4",
     "changelog": [
         "heya so I thought I'd hijack your changelog in the form of notes on how I've changed things comparing to the original.",
         "The following changes were made:",
         "- added a yellow label on the top of main menu to indicate archive version",
         "- changed 'what's new' to 'note' (the very thing you're reading now)",
-        "- hijacked the discord link to ours since the devs don't work on saladbind anymore (join if you want to be notified of updates)"
+        "- hijacked the discord link to ours since the devs don't work on saladbind anymore (join if you want to be notified of updates)",
+        "- NOTE FOR PEOPLE ON OLDER VERSIONS: Automatic updates WILL NOT WORK. Please download the latest version from here manually: github.com/RadsammyT/SaladBind-Archive"
 
     ],
     "next_version": "1.6.0",
