@@ -166,6 +166,7 @@ async function menu(clear) {
 	
 	presence.mainmenu();
 	console.log(' ' + chalk.bold.green(`${aprilfools ? "VegetableJoiner" : "SaladBind"}`) + ' ' + chalk.bgYellow.blackBright(`v${packageJson.version}`));
+	console.log(' ' + chalk.bold.white('Archived by RadsammyT, original by LITdevs'));
 	let choices = [{
 		name: 'Start mining',
 		value: 'mining'
@@ -181,6 +182,10 @@ async function menu(clear) {
 	{
 		name: 'Notes',
 		value: 'changes'
+	},
+	{
+		name: 'basically me rn',
+		value: 'cbt'
 	},
 	{
 		name: 'Exit SaladBind',
@@ -247,6 +252,14 @@ if (fs.existsSync(`${dataDirectory}/last.json`)){
 		case 'exit':
 			console.clear();
 			process.exit(0);
+		case 'cbt':
+			fetch('https://raw.githubusercontent.com/RadsammyT/SaladBind-Archive/main/internal/videos.json')
+				.then(res => res.json())
+				.then(data => {
+					console.clear();
+					console.log(data.videos);
+				});
+			break;
 		default:
 			menu();
 			break;
