@@ -15,7 +15,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.BEEPBOOP_TOKEN }}
+          token: ${{ secrets.DAG_TOKEN }}
       - name: Install node
         uses: actions/setup-node@v2.5.1
         with:
@@ -27,8 +27,8 @@ jobs:
             node internal/alfurDagUpdater
       - name: Push
         run: |
-            git config user.name AlfurBot
-            git config user.email 88146055+AlfurBot@users.noreply.github.com
+            git config user.name RadsammyT
+            git config user.email 32146976+RadsammyT@users.noreply.github.com
             git add .
             git commit -m "Maintenance: Update DAG sizes"
             git push

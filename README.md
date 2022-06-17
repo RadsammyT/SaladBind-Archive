@@ -6,9 +6,9 @@ IN THE FUTURE, THIS REPO MAY MEET THE SAME FATE AS THE ORIGINAL. ALTERNATIVES FO
 
 [Wayback Machine of the LITdevs repo](https://web.archive.org/web/20220504055329/https://github.com/LITdevs/SaladBind)
 
-**NO CHANGES TO THE STANDARD README BELOW ARE MADE**
-
 [my discord server](https://discord.gg/d4qQQr9Grx)
+
+**NO CHANGES TO THE STANDARD README BELOW ARE MADE**
 
 # SaladBind [![Discord](https://img.shields.io/discord/868937321402204220?color=5865f2&label=chat&logo=discord&logoColor=7289da)](https://discord.gg/litdevs)
 
