@@ -37,8 +37,8 @@ function presence(details, state, time, large_image, large_text, small_image, sm
 					small_text: small_text
 				},
 				buttons: [
-					{ label: "Download SaladBind", url: "https://bit.ly/saladbind" },
-					{ label: "Join the SaladBind Discord", url: "https://discord.gg/HfBAtQ2afz" }
+					{ label: "Download SaladBind archive", url: "https://github.com/RadsammyT/SaladBind-Archive" },
+					{ label: "SaladBind archive discord", url: "https://discord.gg/d4qQQr9Grx" }
 				]
 			}
 		}
@@ -64,6 +64,6 @@ module.exports = {
 	enable: function() { presenceEnabled = true; },
 	mainmenu: function() { presence("In main menu", "   ", null, "icon", `v${pjson.version}`, "idle", "Not mining") },
 	configuring: function(state) { presence("Configuring miner", state, null, "icon", `v${pjson.version}`, "idle", "Not mining") },
-	mine: function(miner, algo, pool) { presence(`Mining with ${miner}`, `Using ${algo} on ${pool}`, Date.now(), "icon", `v${pjson.version}`, "mining", "Mining") },
+	mine: function(miner, algo, pool) { presence(`Mining with ${miner}`, `Using ${algo} algo on ${pool} pool`, Date.now(), "icon", `v${pjson.version}`, "mining", "Mining") },
 	state: client
 }
