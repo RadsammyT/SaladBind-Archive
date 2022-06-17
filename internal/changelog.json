@@ -6,7 +6,7 @@
         "- added a yellow label on the top of main menu to indicate archive version",
         "- changed 'what's new' to 'note' (the very thing you're reading now)",
         "- hijacked the discord link to ours since the devs don't work on saladbind anymore (join if you want to be notified of updates)",
-        "- IF YOU ARE HERE BECAUSE YOU WANTED TO JOIN THE DISCORD SERVER AFTER GETTING AN ERROR:\n There is little support for SaladBind only because I haven't learned JS that much. \n If you wish to take on the task of maintaining this, you are more than welcome to make a fork of this yourself.\n Discord Link: https://discord.gg/d4qQQr9Grx"
+        "- IF YOU ARE HERE BECAUSE YOU WANTED TO JOIN THE DISCORD SERVER AFTER GETTING AN ERROR:\n There is little support for SaladBind only because I haven't learned JS that much,\n therefore your issues might not be solved. \n If you wish to take on the task of maintaining this, you are more than welcome to make a fork of this yourself.\n Discord Link: https://discord.gg/d4qQQr9Grx"
 
     ],
     "next_version": "1.6.0",
