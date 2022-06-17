@@ -58,8 +58,8 @@ process.on("uncaughtException", err => {
 	}
 });
 
-const ora = require('ora'); // ara ara 
-							// yare yare dawa
+const ora = require('ora'); // ara ara - LITdevs
+							// yare yare dawa - RadsammyT
 const chalk = require('chalk');
 const packageJson = require('../package.json');
 const fs = require('fs');
