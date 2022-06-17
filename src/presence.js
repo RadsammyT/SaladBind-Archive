@@ -66,4 +66,4 @@ module.exports = {
 	configuring: function(state) { presence("Configuring miner", state, null, "icon", `v${pjson.version}`, "idle", "Not mining") },
 	mine: function(miner, algo, pool) { presence(`Mining with ${miner}`, `Using ${algo} algo on ${pool} pool`, Date.now(), "icon", `v${pjson.version}`, "mining", "Mining") },
 	state: client
-}
+} 
