@@ -1,14 +1,14 @@
 process.on("uncaughtException", err => {
 	try {
 		if(err.stack.includes("Could not connect") || err.stack.includes("RPC_") || err.stack.includes("discord-rpc")) {
-			console.log("There was an error with the Discord RPC but it has been ignored. If you see this message and SaladBind is unusable, please contact us on Discord.");
+			console.log("There was an error with the Discord RPC but it has been ignored. If you see this message and SaladBind is unusable, contact me on Discord, I'll try to fix it.");
 			return "Discord RPC Broken I guess, as always"; // no one will see this message :) -Vukky/whoever wrote this
 			// except for me. -RadsammyT
 		}
 		console.clear();
 		console.log(`${chalk.bold.red("Oh noes! A scary error!")}\nTechnical details: ${err.message}`);
 		if(err.message.includes("EPERM")) console.log(chalk.blueBright("This *could* be your antivirus."))
-		console.log("\nPlease join our Discord server (SEE CHANGELOGS) and send us your log file.\n'But where is it?' The file path will be logged.");	
+		console.log("\nPlease join the Discord server (SEE CHANGELOGS) and send us your log file.\n'But where is it?' The file path will be logged.");	
 		inquirer.prompt({
 			name: "exit",
 			message: "What do you want to do?",
