@@ -12,7 +12,6 @@ if (!fs.existsSync(configFile)) {
 	config = JSON.parse(rawdata)
 }
 
-
 if (config.discordPresence == true) { //If the user opts-in to having the Rich Presence then try connent to the rich presence application
 	try {
 		client.login({
