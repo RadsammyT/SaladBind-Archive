@@ -1,14 +1,14 @@
 {
-    "version": "1.7.4-ARCHIVE.5",
+    "version": "1.7.4-ARCHIVE.6",
     "changelog": [
-        "update time :)",
-        "The following changes were made for 1.7.4-ARCHIVE.5:",
-        " - edited discord rich presence to link to the archive repo and discord server along with some edits to mining descriptions",
-        " - any references to the old discord will be replaced with '(SEE CHANGELOG)', as for why I did this look at the bottom of the changelog",
-        " - and some other things I forgor :skull:",
+        "oh boy another one",
+        "The following changes were made for 1.7.4-ARCHIVE.6:",
+        " - new discord rich presence logo, since the old one was LITERALLY the node.js logo. I also removed the 'sub-icons' that were used if you were idle or mining",
+        " - added a youtube roulette to the menu for fun. list of vids is in /internal/videos.json. suggestions to add more are in discord ",
+        " - and maybe some other things that I forgor :skull:",
 
 
-        "\n \n \n - IF YOU ARE HERE BECAUSE YOU WANTED TO JOIN THE DISCORD SERVER AFTER GETTING AN ERROR: I cannot provide much support personally since SaladBind got poofed.\n There is little support for SaladBind because I haven't learned JS that much,\n therefore your issues might not be resolved. \n If you wish to take on the task of fixing this issue yourself, you are more than welcome to make a fork of this and going from there. See CONTRIBUTE.md @ root directory of the repo\n Discord Link: https://discord.gg/d4qQQr9Grx"
+        "\n \n \n - IF YOU ARE HERE BECAUSE YOU WANTED TO JOIN THE DISCORD SERVER AFTER GETTING AN ERROR:\n I cannot provide much support personally since SaladBind got poofed.\n There is little support for SaladBind because I haven't learned JS that much,\n therefore your issues might not be resolved. \n If you wish to take on the task of fixing this issue yourself, you are more than welcome to make a fork of this and going from there. See CONTRIBUTE.md @ root directory of the repo\n Discord Link: https://discord.gg/d4qQQr9Grx"
 
     ],
     "next_version": "what the fuck (1.6.0)",

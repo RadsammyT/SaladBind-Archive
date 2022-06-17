@@ -166,7 +166,7 @@ async function menu(clear) {
 	
 	presence.mainmenu();
 	console.log(' ' + chalk.bold.green(`${aprilfools ? "VegetableJoiner" : "SaladBind"}`) + ' ' + chalk.bgYellow.blackBright(`v${packageJson.version}`));
-	console.log(' ' + chalk.bold.white('Archived by RadsammyT, original by LITdevs'));
+	console.log(' ' + chalk.bold.white('Revived by RadsammyT, original by LITdevs'));
 	let choices = [{
 		name: 'Start mining',
 		value: 'mining'
