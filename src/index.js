@@ -180,15 +180,15 @@ async function menu(clear) {
 		value: 'discord'
 	},
 	{
-		name: 'Notes',
+		name: 'Changelog',
 		value: 'changes'
 	},
 	{
-		name: 'basically me rn',
+		name: 'Youtube Roulette',
 		value: 'cbt'
 	},
 	{
-		name: 'Exit SaladBind',
+		name: 'Exit',
 		value: 'exit'
 	}
 ]
@@ -257,7 +257,14 @@ if (fs.existsSync(`${dataDirectory}/last.json`)){
 				.then(res => res.json())
 				.then(data => {
 					console.clear();
-					console.log(data.videos);
+					console.log(chalk.bold.green(`ok roulette time!`));
+					//randomly select a video in videos.json
+					let random = Math.floor(Math.random() * data.videos.length);
+					open(data.videos[random]);
+					console.log(`\nVideo should be open in your browser\n if not try: ${data.videos[random]}`);
+					setTimeout(() => {
+						menu();
+					}, 10000);
 				});
 			break;
 		default:

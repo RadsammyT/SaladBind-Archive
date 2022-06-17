@@ -62,8 +62,8 @@ module.exports = {
 	}, //Not technically disconnecting but idfk its basically the same
 	// the following asset keys are used: icon, mining, idle.
 	enable: function() { presenceEnabled = true; },
-	mainmenu: function() { presence("In main menu", "   ", null, "icon", `v${pjson.version}`, "idle", "Not mining") },
-	configuring: function(state) { presence("Configuring miner", state, null, "icon", `v${pjson.version}`, "idle", "Not mining") },
-	mine: function(miner, algo, pool) { presence(`Mining with ${miner}`, `Using ${algo} algo on ${pool} pool`, Date.now(), "icon", `v${pjson.version}`, "mining", "Mining") },
+	mainmenu: function() { presence("In main menu", "   ", null, "icon", `v${pjson.version}`, "blank", "Not mining") },
+	configuring: function(state) { presence("Configuring miner", state, null, "icon", `v${pjson.version}`, "blank", "Not mining") },
+	mine: function(miner, algo, pool) { presence(`Mining with ${miner}`, `Using ${algo} algo on ${pool} pool`, Date.now(), "icon", `v${pjson.version}`, "blank", "Mining") },
 	state: client
 } 
