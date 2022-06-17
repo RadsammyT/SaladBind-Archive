@@ -16,7 +16,7 @@ if (!fs.existsSync(configFile)) {
 if (config.discordPresence == true) { //If the user opts-in to having the Rich Presence then try connent to the rich presence application
 	try {
 		client.login({
-			clientId: '872392087440621579'
+			clientId: '987417756133638164' 
 		});
 	} catch (error) { // Ignoring the error since we dont want SaladBind dying when the user doesn't have Discord open
 	}
@@ -61,6 +61,7 @@ module.exports = {
 			presenceEnabled = false;
 		}
 	}, //Not technically disconnecting but idfk its basically the same
+	// the following asset keys are used: icon, mining, idle.
 	enable: function() { presenceEnabled = true; },
 	mainmenu: function() { presence("In main menu", "   ", null, "icon", `v${pjson.version}`, "idle", "Not mining") },
 	configuring: function(state) { presence("Configuring miner", state, null, "icon", `v${pjson.version}`, "idle", "Not mining") },
