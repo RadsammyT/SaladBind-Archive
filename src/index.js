@@ -165,6 +165,7 @@ async function menu(clear) {
 	}
 	
 	presence.mainmenu();
+	// i originally wanted to display some notes at the top of the menu but I couldn't get that to somehow work sooooo
 	console.log(' ' + chalk.bold.green(`${aprilfools ? "VegetableJoiner" : "SaladBind"}`) + ' ' + chalk.bgYellow.blackBright(`v${packageJson.version}`));
 	console.log(' ' + chalk.bold.white('Revived by RadsammyT, original by LITdevs'));
 	let choices = [{
