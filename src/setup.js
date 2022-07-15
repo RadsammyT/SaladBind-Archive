@@ -185,7 +185,7 @@ async function miner(){
 				if (input.length == 778 || input == "cancel") {
 					return true;
 				}
-				return `Your Salad Access Token is required for automatic mode. If you don't want this, type "${chalk.yellowBright("cancel")}" and select manual\nor select to get them automatically from the logs of Salad. ${chalk.yellow.bold("\nYou may be seeing this if you entered the token incorrectly, the token is 778 chars long!\nIf you do not know how to configure read this\nhttps://bit.ly/saladbindconfig (copy this to read it)")}`;
+				return `Your Salad Access Token is required for automatic mode. If you don't want this, type "${chalk.yellowBright("cancel")}" and select manual\nor select to get them automatically from the logs of Salad. ${chalk.yellow.bold("\nYou may be seeing this if you entered the token incorrectly, the token is 778 chars long!\n")}`;
 			}
 		}]);
 		if(auth.auth == "cancel") {
@@ -202,7 +202,7 @@ async function miner(){
 		} catch (e) {
 			spinner.fail();
 			console.log(e);
-			console.log(chalk.bold.red("Failed to get your Rig ID! This is most likely your auth code being expired, try refreshing app.salad.io in your browser and getting the token again.\nIf that does not work, please contact us at https://discord.gg/HfBAtQ2afz."));
+			console.log(chalk.bold.red("Failed to get your Rig ID! This is most likely your auth code being expired, try refreshing app.salad.io in your browser and getting the token again.\nIf that does not work, please contact us at (SEE CHANGELOGS)."));
 			console.log("Going back in 20 seconds");
 			setTimeout(() => {
 				run(true);
