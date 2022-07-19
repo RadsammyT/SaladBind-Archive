@@ -135,7 +135,7 @@ async function miner(){
 				console.log(chalk.bold.red(`An error occurred while reading the log file ${filename}, make sure that you have ran Salad and that SaladBind has permission to access it.`))
 				return;
 			}
-			const rigIDRegex = /^NiceHash rig ID: [a-z0-9]{15}$/m;
+			const rigIDRegex = /^NiceHash rig ID: [a-z0-9]{15}$/m; // monkaS the regexs intimidate me, god please help us all
 			const idRegex = /o=[a-z0-9]{8}\-[a-z0-9]{4}\-[a-z0-9]{4}\-[a-z0-9]{4}\-[a-z0-9]{12}/
 			let rigID = logFileContent.match(rigIDRegex);
 			if (rigID) rigID = rigID.join(" ");
