@@ -1,6 +1,6 @@
 # ARCHIVE NOTES
 THIS REPO IS FOR PEOPLE WHO WANT TO CONTINUE USING SALADBIND. IT WILL BE SOMEWHAT MAINTAINED AND WILL HAVE THEIR MINERS UPDATED.
-IN THE FUTURE, THIS REPO MAY MEET THE SAME FATE AS THE ORIGINAL. ALTERNATIVES FOR SALADBIND MAY COME UP IN THE MEANWHILE.
+IN THE FUTURE, ***THIS REPO MAY MEET THE SAME FATE AS THE ORIGINAL***. ALTERNATIVES FOR SALADBIND MAY COME UP IN THE MEANWHILE.
 
 [Try Salad in CLI](https://angaros.vercel.app/cli.html)
 
@@ -8,9 +8,9 @@ IN THE FUTURE, THIS REPO MAY MEET THE SAME FATE AS THE ORIGINAL. ALTERNATIVES FO
 
 [my discord server](https://discord.gg/d4qQQr9Grx)
 
-**NO CHANGES TO THE STANDARD README BELOW ARE MADE**
+# NO CHANGES TO THE ORIGINAL README BELOW ARE MADE, **DO NOT CONTACT LIT DEVS FOR SUPPORT**, THEY HAVE ABANDONED IT.
 
-# SaladBind [![Discord](https://img.shields.io/discord/868937321402204220?color=5865f2&label=chat&logo=discord&logoColor=7289da)](https://discord.gg/litdevs)
+# SaladBind [![Discord](https://img.shields.io/discord/868937321402204220?color=5865f2&label=chat&logo=discord&logoColor=7289da)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 <img align="right" width="100" height="100" src="https://raw.githubusercontent.com/Vukkyy/vukmoji/master/emojis/static/vukkyminer.png">
 
@@ -26,7 +26,7 @@ If you want to contribute to SaladBind, please read our [contributing guide](CON
 
 **This application is not affiliated with Salad Technologies.** It is made by LIT Devs, for the entire Salad community.
 
-We have a [Discord server](https://discord.gg/zpsN7swhfD) if you want to talk to us!
+We have a [Discord server](https://www.youtube.com/watch?v=dQw4w9WgXcQ) if you want to talk to us!
 
 ## Features
 
