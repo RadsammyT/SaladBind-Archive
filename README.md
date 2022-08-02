@@ -12,7 +12,7 @@ IN THE FUTURE, ***THIS REPO MAY MEET THE SAME FATE AS THE ORIGINAL***. ALTERNATI
 
 # SaladBind [![Discord](https://img.shields.io/discord/868937321402204220?color=5865f2&label=chat&logo=discord&logoColor=7289da)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
-<img align="right" width="100" height="100" src="https://raw.githubusercontent.com/Vukkyy/vukmoji/master/emojis/static/vukkyminer.png">
+<img align="right" width="100" height="100" src="https://memes.co.in/memes/update/uploads/2021/12/InShot_20211209_222013681.jpg">
 
 If you want to contribute to SaladBind, please read our [contributing guide](CONTRIBUTING.md). Do **NOT** make your own SaladBind version unless you have a good reason to! We welcome any contributions!
 
@@ -30,7 +30,7 @@ We have a [Discord server](https://www.youtube.com/watch?v=dQw4w9WgXcQ) if you w
 
 ## Features
 
-<img align="right" width="100" height="100" src="https://raw.githubusercontent.com/Vukkyy/vukmoji/master/emojis/static/vukkywoah.png">
+<img align="right" width="100" height="100" src="https://memes.co.in/memes/update/uploads/2021/12/InShot_20211209_222013681.jpg">
 
 - Switch between miners, pools, and algorithms
 - Shows only miners and algorithms that are supported by your GPU
@@ -46,7 +46,7 @@ We have a [Discord server](https://www.youtube.com/watch?v=dQw4w9WgXcQ) if you w
 
 ## Installation
 
-<img align="right" width="100" height="100" src="https://raw.githubusercontent.com/Vukkyy/vukmoji/master/emojis/static/vukkyhappy.png">
+<img align="right" width="100" height="100" src="https://memes.co.in/memes/update/uploads/2021/12/InShot_20211209_222013681.jpg">
 
 ### Windows
 
@@ -78,7 +78,7 @@ chmod +x ./saladbind-linux # You only need to run this once
 
 ## Configuration
 
-<img align="right" width="100" height="100" src="https://raw.githubusercontent.com/Vukkyy/vukmoji/master/emojis/static/vukkythink.png">
+<img align="right" width="100" height="100" src="https://memes.co.in/memes/update/uploads/2021/12/InShot_20211209_222013681.jpg">
 
 Once you start SaladBind for the first time, it will ask you if you want to enable Discord Rich Presence. Here is what it looks like: 
 
