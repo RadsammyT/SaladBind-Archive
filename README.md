@@ -4,7 +4,7 @@ IN THE FUTURE, ***THIS REPO MAY MEET THE SAME FATE AS THE ORIGINAL***. ALTERNATI
 
 [Try Salad in CLI](https://angaros.vercel.app/cli.html)
 
-[Wayback Machine of the LITdevs repo](https://web.archive.org/web/20220504055329/https://github.com/LITdevs/SaladBind)
+[Wayback Machine of the LITdevs repo](https://web.archive.org/web/20220504055329/https://github.com/RadsammyT/SaladBind-Archive)
 
 [my discord server](https://discord.gg/d4qQQr9Grx)
 
@@ -50,7 +50,7 @@ We have a [Discord server](https://www.youtube.com/watch?v=dQw4w9WgXcQ) if you w
 
 ### Windows
 
-Download the file from [GitHub Releases](https://github.com/LITdevs/SaladBind/releases/latest).
+Download the file from [GitHub Releases](https://github.com/RadsammyT/SaladBind-Archive/releases/latest).
 
 There's a video tutorial, which you can find [here](https://www.youtube.com/watch?v=u_dOOn75_mA), if you prefer digesting information via video rather than text.
 
@@ -62,7 +62,7 @@ Is Arch not your favorite distro? That's unfortunate! You can try contacting us,
 
 ### macOS and other Linux distros
 
-Download the file from [GitHub Releases](https://github.com/LITdevs/SaladBind/releases/latest). For these platforms, you'll need to run SaladBind from the terminal, due to how SaladBind works. If you need help with using the terminal, don't be afraid to Google a bit - you'll have to use `cd` to be in the same folder that SaladBind is in.
+Download the file from [GitHub Releases](https://github.com/RadsammyT/SaladBind-Archive/releases/latest). For these platforms, you'll need to run SaladBind from the terminal, due to how SaladBind works. If you need help with using the terminal, don't be afraid to Google a bit - you'll have to use `cd` to be in the same folder that SaladBind is in.
 
 Use these commands to start SaladBind, for macOS or Linux respectively:
 
