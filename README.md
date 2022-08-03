@@ -4,11 +4,13 @@ IN THE FUTURE, ***THIS REPO MAY MEET THE SAME FATE AS THE ORIGINAL***. ALTERNATI
 
 [Try Salad in CLI](https://angaros.vercel.app/cli.html)
 
-[Wayback Machine of the LITdevs repo](https://web.archive.org/web/20220504055329/https://github.com/RadsammyT/SaladBind-Archive)
+[Wayback Machine of the LITdevs repo](https://web.archive.org/web/20220504055329/https://github.com/LITdevs/SaladBind)
 
 [my discord server](https://discord.gg/d4qQQr9Grx)
 
-# NO CHANGES TO THE ORIGINAL README BELOW ARE MADE, **DO NOT CONTACT LIT DEVS FOR SUPPORT**, THEY HAVE ABANDONED IT.
+# NO CHANGES TO THE ORIGINAL README BELOW ARE MADE*, **DO NOT CONTACT LIT DEVS FOR SUPPORT**, THEY HAVE ABANDONED IT.
+*except for the images (changed at vukkys request) and hyperlinks (discord links and github releases)
+
 
 # SaladBind [![Discord](https://img.shields.io/discord/868937321402204220?color=5865f2&label=chat&logo=discord&logoColor=7289da)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
