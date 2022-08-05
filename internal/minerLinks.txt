@@ -1,0 +1,7 @@
+Links to miners listed in /internal/miners.json for convenience:
+PhoenixMiner: https://phoenixminer.org/download/latest/
+T-Rex: https://github.com/trexminer/T-Rex/releases
+NBMiner: https://github.com/NebuTech/NBMiner
+TeamRedMiner: https://github.com/todxx/teamredminer/releases
+lolMiner: https://github.com/Lolliedieb/lolMiner-releases/releases
+XMRig: https://github.com/xmrig/xmrig/releases
