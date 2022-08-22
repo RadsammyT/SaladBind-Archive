@@ -458,12 +458,18 @@ async function prepStart(minerData, algo, pool, region, advancedCommands, quick=
 		resolve(false);
 	}});
 	console.log(chalk.bold.cyan(`Configure your miner`))
+	if (quick) {
+		let details = JSON.parse(fs.readFileSync(`${dataDirectory}/last.json`))
+		console.log(chalk.bold.cyan(`Here's what you ran last time: `))
+		console.log(`Miner: ${details.data.miner}`) //miner
+		console.log(`Algorithm: ${details.algo}`) //algo
+		console.log(`Pool (Region): ${details.pool.name} (${details.region})`) //pool (and maybe region)
+	}
 	presence.configuring("About to start!");
 	if (advancedCommands.length > 0) {
 		console.log("Current Advanced Commands:")
 		console.log(advancedCommands)
 	}
-	
 	const startNow = await inquirer.prompt({
 		type: "list",
 		name: "startNow",
