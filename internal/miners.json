@@ -41,8 +41,8 @@
         "trex": {
             "miner": "T-Rex",
             "download": {
-                "win32": "https://github.com/trexminer/T-Rex/releases/download/0.26.4/t-rex-0.26.4-win.zip",
-                "linux": "https://github.com/trexminer/T-Rex/releases/download/0.26.4/t-rex-0.26.4-linux.tar.gz"
+                "win32": "https://github.com/trexminer/T-Rex/releases/download/0.26.5/t-rex-0.26.5-win.zip",
+                "linux": "https://github.com/trexminer/T-Rex/releases/download/0.26.5/t-rex-0.26.5-linux.tar.gz"
             },
             "algos": [
                 "ethash",
@@ -59,7 +59,7 @@
                 "linux"
             ],
             "fee": 1,
-            "version": "0.26.4",
+            "version": "0.26.5",
             "parameters": {
                 "fileName": "t-rex",
                 "algo": "-a",
@@ -71,8 +71,8 @@
         "nbminer": {
             "miner": "NBMiner",
             "download": {
-                "win32": "https://github.com/NebuTech/NBMiner/releases/download/v42.2/NBMiner_42.2_Win.zip",
-                "linux": "https://github.com/NebuTech/NBMiner/releases/download/v42.2/NBMiner_42.2_Linux.tgz"
+                "win32": "https://github.com/NebuTech/NBMiner/releases/download/v42.3/NBMiner_42.3_Win.zip",
+                "linux": "https://github.com/NebuTech/NBMiner/releases/download/v42.3/NBMiner_42.3_Linux.tgz"
             },
             "algos": [
                 "ethash",
@@ -91,7 +91,7 @@
                 "linux"
             ],
             "fee": 2,
-            "version": "42.2",
+            "version": "42.3",
             "parameters": {
                 "fileName": "nbminer",
                 "algo": "-a",
@@ -131,8 +131,8 @@
         "lolminer": {
             "miner": "lolMiner",
             "download": {
-                "win32": "https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.53/lolMiner_v1.53_Win64.zip",
-                "linux": "https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.53/lolMiner_v1.53_Lin64.tar.gz"
+                "win32": "https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.55/lolMiner_v1.55_Win64.zip",
+                "linux": "https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.55/lolMiner_v1.55_Lin64.tar.gz"
             },
             "algos": [
                 "ethash",
@@ -149,7 +149,7 @@
                 "linux"
             ],
             "fee": 1,
-            "version": "1.53",
+            "version": "1.55",
             "parameters": {
                 "fileName": "lolMiner",
                 "algo": "--algo",
