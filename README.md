@@ -2,6 +2,8 @@
 THIS REPO IS FOR PEOPLE WHO WANT TO CONTINUE USING SALADBIND. IT WILL BE SOMEWHAT MAINTAINED AND WILL HAVE THEIR MINERS UPDATED.
 IN THE FUTURE, ***THIS REPO MAY MEET THE SAME FATE AS THE ORIGINAL***. ALTERNATIVES FOR SALADBIND MAY COME UP IN THE MEANWHILE.
 
+Also: Some features in the archive versions are either enhanced or created and may not be found in other versions.
+
 [Try Salad in CLI](https://angaros.vercel.app/cli.html)
 
 [Wayback Machine of the LITdevs repo](https://web.archive.org/web/20220504055329/https://github.com/LITdevs/SaladBind)

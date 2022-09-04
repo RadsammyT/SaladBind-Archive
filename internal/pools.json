@@ -1,28 +1,28 @@
 {
     "nicehash": {
         "name": "NiceHash",
-        "regions": ["eu-west", "eu-north", "usa-west", "usa-east"],
+        "regions": ["auto"],
         "algos": {
             "beamv3": {
-                "host": "stratum+tcp://beamv3.REGION.nicehash.com:3387"
+                "host": "stratum+tcp://beamv3.REGION.nicehash.com:9200"
             },
             "kawpow": {
-                "host": "stratum+tcp://kawpow.REGION.nicehash.com:3385"
+                "host": "stratum+tcp://kawpow.REGION.nicehash.com:9200"
             },
             "ethash": {
-                "host": "stratum+tcp://daggerhashimoto.REGION.nicehash.com:3353"
+                "host": "stratum+tcp://daggerhashimoto.REGION.nicehash.com:9200"
             },
             "EQUI144_5": {
-                "host": "stratum+tcp://zhash.REGION.nicehash.com:3369"
+                "host": "stratum+tcp://zhash.REGION.nicehash.com:9200"
             },
             "randomx": {
-                "host": "stratum+tcp://randomxmonero.REGION.nicehash.com:3380"
+                "host": "stratum+tcp://randomxmonero.REGION.nicehash.com:9200"
             },
             "autolykos2": {
-                "host": "stratum+tcp://autolykos.REGION.nicehash.com:3390"
+                "host": "stratum+tcp://autolykos.REGION.nicehash.com:9200"
             },
             "octopus": {
-                "host": "stratum+tcp://octopus.REGION.nicehash.com:3389"
+                "host": "stratum+tcp://octopus.REGION.nicehash.com:9200"
             }
 
         }
