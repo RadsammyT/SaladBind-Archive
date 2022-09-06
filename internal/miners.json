@@ -154,7 +154,7 @@
                 "fileName": "lolMiner",
                 "algo": "--algo",
                 "wallet": "--user",
-                "pool": "--pool",
+                "pool": "--tls on --pool",
                 "pass": "--pass"
             }
         },
