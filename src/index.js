@@ -247,6 +247,7 @@ if (fs.existsSync(`${dataDirectory}/last.json`)){
 				console.log("\nOpened the invite in your browser!");
 			}
 			setTimeout(() => {
+				process.title = `${aprilfools ? "VegetableJoiner" : "SaladBind"} v${packageJson.version}`;
 				menu();
 			}, 3500);
 			break;
@@ -264,6 +265,7 @@ if (fs.existsSync(`${dataDirectory}/last.json`)){
 					open(data.videos[random]);
 					console.log(`\nVideo should be open in your browser\n if not try: ${data.videos[random]}`);
 					setTimeout(() => {
+						process.title = `${aprilfools ? "VegetableJoiner" : "SaladBind"} v${packageJson.version}`;
 						menu();
 					}, 10000);
 				});
