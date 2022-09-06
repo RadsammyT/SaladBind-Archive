@@ -1,5 +1,3 @@
-//im probably not gonna touch this. ever.
-
 const ora = require('ora');
 const chalk = require('chalk');
 const inquirer = require('inquirer');
@@ -20,7 +18,7 @@ const { spawn, execSync } = require("child_process");
 const presence = require('./presence');
 const cache = require("./getMachine.js"); // wtf how is this cache haha
 let spinner;
-let isDev = config.dev != undefined && config.dev == true;
+// let isDev = config.dev != undefined && config.dev == true;
 let lastMiner = {}
 
 function moveDupeFolder(folderName) {
@@ -230,7 +228,7 @@ async function continueMiner() {
 					var downloadURL = miner.miner.download[userPlatform];
 					var fileExtension = path.extname(downloadURL); //time for a really hacky solution. this 
 					if (fileExtension == ".gz") {
-						fileExtension = ".tar.gz"
+						fileExtension = ".tar.gz" //wow lazy solution
 					}
 					const fileName = `${miner.miner.miner}-${miner.miner.version}`
 					const fileLocation = `${dataDirectory}/temp/${fileName}${fileExtension}`;
@@ -325,7 +323,7 @@ async function selectPool(minerData, algo) {
 			} else {
 				console.log(chalk.green(`Only one pool available with these settings, using ${poolList[0].name}`))
 			}
-			presence.configuring("Selecting pool region");
+			presence.configuring("Selecting pool region (just pick the closest one)");
 			const regionList = [];
 			const poolsy = poolList.length > 1 ? pool.pool : poolList[0].value;
 			for (let i = 0; i < poolsy.regions.length; i++) {
@@ -456,17 +454,8 @@ async function prepStart(minerData, algo, pool, region, advancedCommands, quick=
 
 	} else {
 		resolve(false);
-		}
-	});
-	if(!quick)
-		console.log(chalk.bold.cyan(`Configure your miner`))
-	else {
-		let details = JSON.parse(fs.readFileSync(`${dataDirectory}/last.json`))
-		console.log(chalk.bold.cyan(`Here's what you ran last time: `))
-		console.log(`	Miner: ${details.data.miner}`) //miner
-		console.log(`	Algorithm: ${details.algo}`) //algo
-		console.log(`	Pool (Region): ${details.pool.name} (${details.region})`) //pool (and maybe region)
-	}
+	}});
+	console.log(chalk.bold.cyan(`Configure your miner`))
 	presence.configuring("About to start!");
 	if (advancedCommands.length > 0) {
 		console.log("Current Advanced Commands:")
@@ -499,11 +488,11 @@ async function prepStart(minerData, algo, pool, region, advancedCommands, quick=
 			presence.mine(minerData.miner, algo, pool.name)
 			// Check if miner is already running in salad using child processes to run "tasklist" if on windows.
 			if(await saladMining) {
-				console.log(chalk.bold.red(`It seems like you are mining using Salad already! It is not recommended to mine using both Salad and SaladBind. Please stop mining in Salad.`));
+				console.log(chalk.bold.red(`It seems like you are mining using a miner already! It is not recommended to use 2 miners at once.`));
 				await inquirer.prompt({
 					type: "input",
 					name: "done",
-					message: "Press enter when you have stopped mining in Salad."
+					message: "Press enter when you have stopped mining in another miner, or if you just want to proceed."
 				});
 			}
 
@@ -633,6 +622,11 @@ async function startMiner(minerData, algo, pool, region, advancedCommands) {
 	if(minerData.miner == "TeamRedMiner" && pool.name == "Ethermine") {
 		pool.algos[algo].host = pool.algos[algo].host.replace("ethproxy+ssl", "stratum+ssl");
 	}
+	if(minerData.miner == "lolMiner" && pool.name == "Ethermine") {
+		pool.algos[algo].host = pool.algos[algo].host.replace("ethproxy+ssl://", "");
+	} else {
+		pool.algos[algo].host = pool.algos[algo].host.replace("--tls on", "");
+	}
 	if(pool.name == "Prohashing") {
 		if(minerData.parameters.wallet == "PHOENIX") {
 			if(algo == "ethash") {
@@ -725,33 +719,39 @@ async function startMiner(minerData, algo, pool, region, advancedCommands) {
 
 		finalArguments.push(advancedCommands)
 		let miner = spawn(`cd ${userPlatform == "win32" ? "/D " : ""}"${dataDirectory}/miners/${minerData.miner}-${minerData.version}" && ${userPlatform == "linux" || userPlatform == "darwin" ? "./" : ""}${minerData.parameters.fileName}`, finalArguments, {stdio: 'inherit', shell: true, env : { FORCE_COLOR: true }}) //its an array dumbass
-		miner.on('close', (code) => {
+		miner.once('close', (code) => {
 			console.log(`\nMiner stopped!\n`);
 			stopped();
+			// this is here to prevent a shit ton of listeners being added
+			// which in turn would cause a memory leak (sort of)
+			miner.removeAllListeners() 
 			require("./index").menu(false);
 		});
-		miner.on('SIGINT', () => {
+		miner.once('SIGINT', () => {
 			console.log(`\nMiner stopped!\n`);
 			stopped();
+			miner.removeAllListeners()
 			require("./index").menu(false);
 		});
-		process.on('SIGINT', () => {
+		process.once('SIGINT', () => {
 			console.log(chalk.yellow("Returning to SaladBind menu..."));
 		});
 	} else {
 		
 		let miner = spawn(`cd ${userPlatform == "win32" ? "/D " : ""}"${dataDirectory}/miners/${minerData.miner}-${minerData.version}" && ${userPlatform == "linux" || userPlatform == "darwin" ? "./" : ""}${minerData.parameters.fileName}`, [defaultArgs.pool, defaultArgs.algo, defaultArgs.wallet, defaultArgs.pass], {stdio: 'inherit', shell: true, env : { FORCE_COLOR: true }})
-		miner.on('close', (code) => {
+		miner.once('close', (code) => {
 			console.log(`\nMiner stopped!\n`);
 			stopped();
+			miner.removeAllListeners()
 			require("./index").menu(false);
 		});
-		miner.on('SIGINT', () => { // Bukky be Stupid
+		miner.once('SIGINT', () => { // Bukky be Stupid
 			console.log(`\nMiner stopped!\n`);
 			stopped();
+			miner.removeAllListeners()
 			require("./index").menu(false);
 		});// nvm
-		process.on('SIGINT', () => {
+		process.once('SIGINT', () => {
 			console.log(chalk.yellow("Returning to SaladBind menu...")); // hadnt saved lol
 			
 		}) 
