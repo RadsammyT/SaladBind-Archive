@@ -132,7 +132,7 @@
             "miner": "lolMiner",
             "download": {
                 "win32": "https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.55/lolMiner_v1.55_Win64.zip",
-                "linux": "https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.55/lolMiner_v1.55_Lin64.tar.gz"
+                "linux": "https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.55/lolMiner_v1.55a_Lin64.tar.gz"
             },
             "algos": [
                 "ethash",
@@ -149,7 +149,7 @@
                 "linux"
             ],
             "fee": 1,
-            "version": "1.55",
+            "version": "1.55a",
             "parameters": {
                 "fileName": "lolMiner",
                 "algo": "--algo",
