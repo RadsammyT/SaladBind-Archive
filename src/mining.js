@@ -633,6 +633,11 @@ async function startMiner(minerData, algo, pool, region, advancedCommands) {
 	if(minerData.miner == "TeamRedMiner" && pool.name == "Ethermine") {
 		pool.algos[algo].host = pool.algos[algo].host.replace("ethproxy+ssl", "stratum+ssl");
 	}
+	if(minerData.miner == "lolMiner" && pool.name == "Ethermine") {
+		pool.algos[algo].host = pool.algos[algo].host.replace("ethproxy+ssl://", "");
+	} else {
+		pool.algos[algo].host = pool.algos[algo].host.replace("--tls on", "");
+	}
 	if(pool.name == "Prohashing") {
 		if(minerData.parameters.wallet == "PHOENIX") {
 			if(algo == "ethash") {
