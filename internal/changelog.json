@@ -1,9 +1,10 @@
 {
-    "version": "1.7.4-ARCHIVE.8",
+    "version": "1.7.4-ARCHIVE.9",
     "changelog": [
-        "heres a couple of things EvadeMaster did:",
-        "   - fixed lolMiner erroring when mining on EtherMine with TLS off",
-        "   - fixed app title changing names when (trying to) open a website",
+        
+        "- Removed ethash mining for the preparation of the Etherium merge.",
+        "   Due to the changes, its recommended that once you update, reset your quick mining configs by",
+        "Selecting 'start mining' on the menu and going from there.",
         "\n \n \n - IF YOU ARE HERE BECAUSE YOU WANTED TO JOIN THE DISCORD SERVER AFTER GETTING AN ERROR:\n I cannot provide much support personally since SaladBind got poofed.\n There is little support for SaladBind because I haven't learned JS that much,\n therefore your issues might not be resolved. \n If you wish to take on the task of fixing this issue yourself, you are more than welcome to make a fork of this and going from there. See CONTRIBUTE.md @ root directory of the repo\n Discord Link: https://discord.gg/d4qQQr9Grx"
 
     ],
