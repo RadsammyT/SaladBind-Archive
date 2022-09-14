@@ -9,9 +9,7 @@
             "kawpow": {
                 "host": "stratum+tcp://kawpow.REGION.nicehash.com:9200"
             },
-            "ethash": {
-                "host": "stratum+tcp://daggerhashimoto.REGION.nicehash.com:9200"
-            },
+            
             "EQUI144_5": {
                 "host": "stratum+tcp://zhash.REGION.nicehash.com:9200"
             },
@@ -33,17 +31,15 @@
         "algos": {
             "etchash": {
                 "host": "ethproxy+ssl://REGION-etc.ethermine.org:5555"
-            },
-            "ethash": {
-                "host": "ethproxy+ssl://REGION.ethermine.org:5555"
             }
+            
         }
     },
     "prohashing": {
         "name": "Prohashing",
         "regions": ["europe", "us"],
         "algos": {
-            "ethash": {
+            "MARKED FOR DELETION": {
                 "host": "stratum+tcp://REGIONprohashing.com:3339"
             },
             "etchash": {
