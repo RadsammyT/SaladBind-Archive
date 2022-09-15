@@ -1,11 +1,10 @@
 {
     "algos": {
-        
-        "etchash": 3063,
-        "kawpow": 3539,
+        "etchash": 3070,
+        "kawpow": 3555,
         "beamv3": 2000,
         "EQUI144_5": 2000,
-        "autolykos2": 2534,
+        "autolykos2": 2536,
         "octopus": 4720,
         "randomx": null
     },
@@ -17,7 +16,6 @@
                 "linux": "https://phoenixminer.info/downloads/PhoenixMiner_6.2c_Linux.tar.gz"
             },
             "algos": [
-                
                 "etchash"
             ],
             "supported_gpus": [
@@ -45,7 +43,6 @@
                 "linux": "https://github.com/trexminer/T-Rex/releases/download/0.26.5/t-rex-0.26.5-linux.tar.gz"
             },
             "algos": [
-                
                 "etchash",
                 "kawpow",
                 "autolykos2",
@@ -75,7 +72,6 @@
                 "linux": "https://github.com/NebuTech/NBMiner/releases/download/v42.3/NBMiner_42.3_Linux.tgz"
             },
             "algos": [
-                
                 "etchash",
                 "kawpow",
                 "beamv3",
@@ -107,7 +103,6 @@
                 "linux": "https://github.com/todxx/teamredminer/releases/download/v0.10.2/teamredminer-v0.10.2-linux.tgz"
             },
             "algos": [
-                
                 "etchash",
                 "kawpow"
             ],
@@ -135,7 +130,6 @@
                 "linux": "https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.55/lolMiner_v1.55a_Lin64.tar.gz"
             },
             "algos": [
-                
                 "etchash",
                 "beamv3",
                 "EQUI144_5"
